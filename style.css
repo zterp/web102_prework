@@ -2,7 +2,8 @@
 
 body {
     font-family: 'Cabin';
-    background-color: #758190;
+    background-color: #d7d7d7;
+    color: #2c3e50;
 }
 
 #tentacles {
@@ -11,9 +12,12 @@ body {
 
 .header {
     display: flex;
-    background-color: lightblue;
-    padding: 1%;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    padding: 20px;
     align-items: center;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
@@ -21,10 +25,44 @@ body {
 
 .stats-container {
     display: flex;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    /*flex-direction: column;*/
+
 }
 
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
+    
+}
+
+.jump-button {
+    font-family: 'Cabin';
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 7px;
+    background-color: #515154;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.jump-button:hover {
+    background-color: #1a1a1a;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 .stats-card {
-    background-color: #a8b0bc;
+    background-color: #252a2f;
+    color: white;
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
@@ -39,7 +77,8 @@ body {
 #games-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: 10 px;
 }
 
 .game-img {
@@ -50,16 +89,19 @@ body {
 
 .game-card {
     background-color: #FFFFFF;
-    padding: 1%;
-    margin: 1%;
+    padding: 16px;
+    margin: 16px;
     width: 300px;
     text-align: center;
-    border-radius: 7px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .game-card:hover {
     cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgb(28, 32, 33);
 }
 
 #button-container {
@@ -69,7 +111,27 @@ body {
 button {
     font-family: 'Cabin';
     border: none;
-    padding: 1%;
-    margin: 1%;
+    padding: 10px 20px;
+    margin: 10px;
     border-radius: 7px;
+    background-color: #515154;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #252a2f;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-card {
+        width: 90%;
+    }
 }

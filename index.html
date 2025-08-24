@@ -7,10 +7,16 @@
   </head>
 
   <body>
+
     <!-- header row with logo -->
     <div class="header">
         <img id="tentacles" src="assets/tentacles.png">
         <h1 class="header-text">Sea Monster Crowdfunding</h1>
+    </div>
+
+    <!-- jump to games button -->
+    <div id="jump-container" style="text-align: center; margin: 20px;">
+        <a href="#games-container" class="jump-button">Jump to Games</a>
     </div>
 
     <!-- background info about company -->
@@ -55,6 +61,18 @@
         <button id="funded-btn">Show Funded Only</button>
         <button id="all-btn">Show All Games</button>
     </div>
+
+    <!-- search bar -->
+    <div id="search-sort-container" style="text-align: center; margin: 20px;">
+        <input
+            type="text"
+            id="search-bar"
+            placeholder="Search games by title..."
+            style="padding: 10px; width: 250px; border-radius: 5px; border: 1px solid #ccc;"
+        />
+        <button id="sort-button" class="sort-button">Sort A–Z</button>
+    </div>
+
     <div id="games-container">
 
     </div>
