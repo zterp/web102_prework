@@ -1,10 +1,10 @@
-# WEB102 Prework - *Name of App Here*
+# WEB102 Prework - *Sea Monster Crowdfunding*
 
-Submitted by: **Your Name Here**
+Submitted by: **Zoey Tsai**
 
-**Name of your app** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
+**Sea Monster Crowdfunding** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
-Time spent: **X** hours spent in total
+Time spent: **12** hours spent in total
 
 ## Required Features
 
@@ -17,7 +17,14 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [ ] A "Jump to Games" button that allows quick navigation to the games list.
+* [ ] Smooth scrolling behavior
+* [ ] A search navigation bar
+* [ ] A button to sort games from A-Z
+* [ ] Responsive design with media queries to improve viewing on mobile devices.
+* [ ] Hover effects on game cards and buttons for improved interactivity.
+* [ ] An improved color scheme
+* [ ] A change from center- to left-alignment for the individual game cards
 
 ## Video Walkthrough
 
